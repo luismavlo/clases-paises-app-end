@@ -1,13 +1,76 @@
-body {
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.aside{
+  height: 100vh;
+  min-height: 100%;
+}
+
+.navbar{
+  background-color: #F9FAFB;
+  border-left: 1px solid #eee;
+  color: black;
+  padding: 10px;
+  height: 50px;
+}
+
+.content__dashboard{
+  display: flex;
+  width: 100%;
+}
+
+.content__dashboard > div{
+  width: 100%;
+}
+
+.login__container{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.login__card{
+  background-color: #F3F4F6;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 225px;
+  width: 25%;
+}
+
+.content_form_search{
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.form_search{
+  width: 90%;
+}
+
+input:invalid{
+  animation: shake 300ms;
+}
+
+@keyframes shake{
+  25% {transform: translateX(4px);}
+  50% {transform: translateX(-4px);}
+  75% {transform: translateX(4px);}
+}
+
+.w-table{
+  width: 90%;
+}
+
+.bandera_svg{
+  width: 60px;
+  height: 40px;
 }
